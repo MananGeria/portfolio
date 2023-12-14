@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manan Geria - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #00bfff;
+      font-size: 18px;
+    }
+
+    header {
+      background-color: #000;
+      color: #00bfff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      top: 0;
+    }
+
+    nav a {
+      color: #00bfff;
+      text-decoration: none;
+      padding: 15px;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #66c2ff;
+    }
+
+    .container {
+      padding: 20px;
+      padding-top: 70px; /* Adjusted to accommodate the fixed navbar */
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #e0e2e3;
+      font-weight: bolder;
+      font-size: 5vh;
+      margin-left: 10vw;
+    }
+    h1 {
+      color: #e0e2e3;
+      font-weight: bolder;
+      font-size: 8vh;
+     
+    }
+    h3 {
+      color: #e0e2e3;
+      font-weight: bolder;
+      font-size: 5vh;
+      /* margin-left: 10vw; */
+    }
+    /* p {
+      line-height: 1.6;
+      width: 40vw;
+      font-size: 4vh;
+    } */
+    #about-me
+    {
+      line-height: 1.6;
+      width: 40vw;
+      font-size: 4vh;
+      margin-left: 10vw;
+    }
+    #aboutme2
+    {
+      line-height: 1.6;
+      width: 40vw;
+      font-size: 4vh;
+      margin-left: 10vw;
+    }
+
+    .skills {
+      list-style: none;
+      padding-left:10vw ;
+    }
+
+    .skills li {
+      display: inline-block;
+      background-color: #111;
+      color: #00bfff;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .interests div {
+      width: calc(30.33% - 20px);
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    }
+
+    .about-img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+      margin-left: 20px;
+      float: right;
+      margin-top:-70vh;
+    }
+
+    footer {
+      background-color: #111;
+      color: #00bfff;
+      text-align: center;
+      padding: 20px;
+      /* position: fixed; */
+      bottom: 0;
+      width: 100%;
+      height: 10vh;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Manan Geria</h1>
+    <p>Student | DJ Sanghvi College of Engineering</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p id="about-me">
+        Hello! I'm Manan Geria, a second-year BTech student at DJ Sanghvi College of Engineering. I have a passion for programming, and my skills include C, Java, HTML, CSS, JavaScript, and Bootstrap.
+      </p>
+      <p id="aboutme2">
+        Besides coding, I'm also passionate about music and enjoy exploring new tunes in my free time. My goal is to combine my technical skills with my love for creativity to build innovative and user-friendly applications.
+      </p >
+      <img class="about-img" src="https://via.placeholder.com/300" alt="Manan Geria">
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>C</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+      </ul>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <div class="interests">
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Technology">
+          <h3>Technology</h3>
+          <p>Exploring new technologies and coding challenges.</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Music">
+          <h3>Music</h3>
+          <p>Passionate about various music genres.</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Coding">
+          <h3>Coding</h3>
+          <p>Enjoying the process of problem-solving and coding.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Contact me: manan.geria@example.com</p>
+    <p>Follow me on <a href="https://twitter.com/manangeria" target="_blank">Twitter</a> | Connect on <a href="https://linkedin.com/in/manangeria" target="_blank">LinkedIn</a></p>
+    <p>&copy; 2023 Manan Geria. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
